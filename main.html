@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090b12"><title>ZESR MOVIE HUB</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/"><span class="logo">Z</span><span>ZESR <b>MOVIE HUB</b></span></a><span class="online"><i></i> MOVIE CENTER</span></header>
+  <main class="wrap">
+    <section class="hero"><div class="eyebrow">YOUR MOVIE UNIVERSE</div><h1>Find your next <span>favorite.</span></h1><p>Search Cinesubz titles and prepare a movie to send through your connected ZESR WhatsApp bot.</p>
+      <form id="searchForm" class="search"><span class="glass">⌕</span><input id="searchInput" placeholder="Search movies and TV shows..." required autocomplete="off"><button id="searchBtn">Search</button></form>
+      <div class="quick">POWERED BY YOUR CONFIGURED CINESUBZ API</div>
+    </section>
+    <section class="heading"><div><div class="eyebrow">EXPLORE</div><h2>Search results</h2></div><span id="count" class="muted">Ready when you are</span></section>
+    <div id="status" class="statusbox">Search for a title to see matching results.</div>
+    <section id="results" class="grid" aria-live="polite"></section>
+    <section class="delivery"><div class="play">▶</div><div class="delivery-body"><div class="eyebrow">WHATSAPP DELIVERY</div><h2>Send to your group</h2><p id="chosen">Select a movie from the results first.</p><label for="groupSelect">Destination group</label><select id="groupSelect"><option value="">Loading groups…</option></select><button id="sendBtn" disabled>Send selected movie</button><small>Requires your existing WhatsApp bot session to be connected. This does not create a new session.</small></div></section>
+  </main>
+  <footer><b>ZESR MOVIE HUB</b><span>Only access and share content you have permission to use.</span></footer>
+  <script src="script.js" defer></script>
+</body></html>
